@@ -1,8 +1,27 @@
 {% extends "blog/Base.html" %}
 
-
-{% block content%}
-    <div class="title">
-        <h1>Abouttt blogger</h1>
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h1 class="card-title text-center">About Blogger</h1>
+                    <p class="card-text mt-4">
+                        Welcome to Blogger, your ultimate destination for expressing yourself through blogs! Whether you're a seasoned writer or just starting out, Blogger provides you with the perfect platform to share your thoughts, ideas, and experiences with the world.
+                    </p>
+                    <p class="card-text">
+                        Our mission is to empower individuals to find their voice and connect with others who share their interests. With a user-friendly interface and a wide range of customizable features, creating and managing your blog has never been easier.
+                    </p>
+                    <p class="card-text">
+                        Join our vibrant community of bloggers today and start sharing your stories, insights, and passions with the world. Let your creativity flow and inspire others along the way!
+                    </p>
+                    <div class="text-center mt-4">
+                        <a href="{% url 'register' %}" class="btn btn-primary btn-lg">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 {% endblock content %}
