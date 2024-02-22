@@ -1,0 +1,21 @@
+{% extends "blog/Base.html" %}
+
+
+{% block content%}
+    <div class="content-section">
+        <div class="border-top pt-3">
+            <small class="text-muted"> Not a Member? <a class="ml-2"href="/register"> Sign Up </a></small>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit" >Login</button>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+
+
+
+There is an issue with the code in this video that I fixed in the later videos. If you're getting an error that says something like "save() got an unexpected keyword argument 'force_insert'" then please update the save method in users/models.py to the following:
+def save(self, *args, **kwargs):
+    super().save(*args, **kwargs)
